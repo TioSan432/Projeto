@@ -1,0 +1,80 @@
+/* quando esta com * é para todo o codigo*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*dimensionamento de caixa*/
+}
+
+body {
+  /*background é o plano de fundo*/
+  background: url(./assets/foto\ fundo.jpg) no-repeat top center/cover;
+}
+
+body * {
+  /*fonte*/
+  font-family: sans-serif; /*fonte*/
+  color: white;
+}
+
+#container {
+  /*caixa da foto de perfil*/
+  width: 360px; /*largura*/
+  margin: auto; /*margem*/
+  margin-top: 56px; /*margem superior*/
+}
+
+#profile {
+  /*arrumar texo do @Isaac._zanin*/
+  text-align: center; /*alinhamento de texo*/
+  padding: 24px; /*preencimento*/
+}
+
+#profile img {
+  /*tamanho em pixels da imagem*/
+  width: 112px; 
+}
+
+#profile p {
+  /*tamanhos e dimensões da escrita do @*/
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/*links - lista*/
+
+ul {
+  /*ul mexe em toda a lista*/
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  /*ul li a mexe nas escritas e caixa em volta da lista*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1); /*cor do fundo da box*/
+  border: 1px solid rgba(255, 255, 255, 0.5); /*cor da borda e borda*/
+
+  border-radius: 8px; /*tamanho da borda da box*/
+
+  backdrop-filter: blur(4px); /*deixar embaçado a box*/
+
+  text-decoration: none; /*tirar o _____ embaixo do link*/
+  font-weight: bold; 
+
+  transition: all 0.2s; /*animação ao entrar na página*/
+}
+
+
+ul li a:hover {/*hover quando passa o mouse por cima e ele interage*/ 
+  background: rgba(255, 255, 255, 0.05); 
+  border: 1.5px solid rgb(255, 255, 255); 
+}
