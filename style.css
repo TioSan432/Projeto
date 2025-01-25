@@ -22,7 +22,7 @@
   --switch-bg-url: url(assets/Sun.svg);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: (0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, 0.01);
+  --highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -158,11 +158,16 @@ footer {
   left: -2px;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
-  right: -2px;
-  left: initial;
+  animation: slide-in 0.2s forwards; /*animação do botão*/
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color); 
 }
 
 #switch span {
@@ -185,5 +190,24 @@ footer {
 
   .light {
     --bg-url: url(./assets/foto-fundo-light.jpg);
+  }
+}
+
+/*configuraão da animação botão*/
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
