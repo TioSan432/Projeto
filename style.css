@@ -38,12 +38,12 @@ body * {
 
 #container {
   /*caixa da foto de perfil*/
-  width: 470px; /*largura*/
+  width: 100%; /*largura*/
+  max-width: 588px;
   margin: auto; /*margem*/
   margin-top: 80px; /*margem superior*/
   margin-bottom: 12px;
   padding: 24px;
-  text-align: flex;
 }
 
 #profile {
@@ -60,7 +60,7 @@ body * {
 
 #profile p {
   /*tamanhos e dimensões da escrita do @*/
-  font-weight: 500;
+  font-weight: bold;
   line-height: 24px;
   margin-top: 8px;
 }
