@@ -26,9 +26,14 @@
 }
 
 body {
-  /*background é o plano de fundo*/
+  /*background é o plano de fundo
   background: var(--bg-url) no-repeat center/auto;
+  height: 100vh;*/
+  background: var(--bg-url) no-repeat center center fixed;
+  background-size: cover;
   height: 100vh;
+  margin: 0
+
 }
 
 body * {
