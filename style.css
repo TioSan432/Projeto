@@ -27,7 +27,7 @@
 
 body {
   /*background é o plano de fundo*/
-  background: var(--bg-url) no-repeat center/cover;
+  background: var(--bg-url) no-repeat center/auto;
   height: 100vh;
 }
 
